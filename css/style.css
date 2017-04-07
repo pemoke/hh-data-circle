@@ -1,0 +1,91 @@
+.el-circle-wrapper {
+    font-family: Arial;
+    color: #706f6f;
+    width: 233px;
+    height: 233px;
+    background-color: #ededed;
+    border-radius: 50%;
+    position: relative;
+    border: 1px dotted transparent;
+    transition: background 0.2s ease;
+}
+
+.el-circle-wrapper:hover {
+    background-color: #3c3c3b;
+    cursor: pointer;
+    color: #ffffff;
+    border: 1px dotted #959595;
+}
+
+.el-circle {
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px dotted #959595;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
+.el-circle-wrapper:hover .el-circle {
+    border: none;
+}
+
+.el-circle span {
+    position: absolute;
+    display: block;
+    transition: background 0.2s ease;
+}
+
+.el-circle-weekday {
+    left: 78px;
+    top: -8px;
+    background-color: #ededed;
+    padding: 0 3px;
+    font-weight: 400;
+    font-size: 13pt;
+}
+
+.el-circle-wrapper:hover .el-circle-weekday {
+    background-color: #3c3c3b;
+}
+
+.el-circle-date {
+    left: 58px;
+    top: 40px;
+    font-weight: 400;
+    font-size: 56pt;
+}
+
+.el-circle-month {
+    left: 77px;
+    top: 115px;
+    font-size: 18pt;
+}
+
+.el-circle-icon {
+    left: 100px;
+    top: 10px;
+}
+
+.el-circle-icon {
+    width: 51px;
+    height: 51px;
+    left: 71px;
+    top: 162px;
+    background-image: url('../img/hammer.png');
+    background-color: #ededed;
+}
+
+.el-circle-wrapper:hover .el-circle-icon {
+    background-image: url('../img/hammer_over.png');
+    background-color: #3c3c3b;
+}
+
+.el-circle-time {
+    position: absolute;
+    bottom: -30px;
+    left: 40px;
+    color: #706f6f;
+}

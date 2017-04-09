@@ -20,6 +20,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .mod-date {
@@ -28,9 +29,8 @@ body {
     text-align: center;
     align-items: center;
     justify-content: center;
-    width: 270px;
-    height: 270px;
-    font-family: Arial, Helvetica, sans-serif;
+    width: 300px;
+    height: 300px;
     letter-spacing: 1px;
     color: #706f6f;
 }
@@ -52,6 +52,7 @@ body {
     box-shadow: 0 0 0 17px #ededed;
     transition: all 0.2s ease-in;
     position: relative;
+    text-transform: uppercase;
 }
 
 .mod-date:hover .submod-circle-date {
@@ -109,5 +110,5 @@ body {
 }
 
 .el-circle-time {
-    padding-top: 20px;
+    margin-top: 10px;
 }

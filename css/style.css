@@ -1,91 +1,113 @@
-.el-circle-wrapper {
-    font-family: Arial;
+:root {
+    box-sizing: border-box;
+    font-size: 0.875em;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mod-date {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 270px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
     color: #706f6f;
-    width: 233px;
-    height: 233px;
-    background-color: #ededed;
-    border-radius: 50%;
-    position: relative;
-    border: 1px dotted transparent;
-    transition: background 0.2s ease;
 }
 
-.el-circle-wrapper:hover {
-    background-color: #3c3c3b;
+.mod-date:hover {
     cursor: pointer;
-    color: #ffffff;
-    border: 1px dotted #959595;
 }
 
-.el-circle {
+.submod-circle-date {
+    display: flex;
+    flex-direction: column;
     width: 200px;
     height: 200px;
-    background-color: transparent;
-    border-radius: 50%;
+    margin: 17px;
+    padding: 0;
+    background-color: #ededed;
     border: 1px dotted #959595;
-    position: absolute;
-    top: 16px;
-    left: 16px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 17px #ededed;
+    transition: all 0.2s ease-in;
+    position: relative;
 }
 
-.el-circle-wrapper:hover .el-circle {
-    border: none;
-}
-
-.el-circle span {
-    position: absolute;
-    display: block;
-    transition: background 0.2s ease;
+.mod-date:hover .submod-circle-date {
+    width: 234px;
+    height: 234px;
+    margin: 0;
+    padding: 17px;
+    background-color: #3c3c3b;
+    border: 1px dotted #959595;
+    box-shadow: none;
+    color: #ffffff;
+    transition: all 0.1s ease-out 0.1s;
 }
 
 .el-circle-weekday {
-    left: 78px;
-    top: -8px;
+    margin-left: 38%;
+    margin-right: 38%;
+    margin-top: -8px;
+    font-size: 1.1rem;
+    font-weight: 600;
     background-color: #ededed;
-    padding: 0 3px;
-    font-weight: 400;
-    font-size: 13pt;
+    transition: background-color 0.1s ease-in 0.15s;
 }
 
-.el-circle-wrapper:hover .el-circle-weekday {
-    background-color: #3c3c3b;
+.mod-date:hover .el-circle-weekday {
+    background-color: transparent;
+    transition: background-color 0.1s ease-out;
 }
 
 .el-circle-date {
-    left: 58px;
-    top: 40px;
-    font-weight: 400;
-    font-size: 56pt;
+    margin-top: 20px;
+    font-size: 6rem;
 }
 
 .el-circle-month {
-    left: 77px;
-    top: 115px;
-    font-size: 18pt;
+    margin-top: -10px;
+    font-size: 2rem;
+    font-weight: 300;
 }
 
 .el-circle-icon {
-    left: 100px;
-    top: 10px;
-}
-
-.el-circle-icon {
-    width: 51px;
-    height: 51px;
-    left: 71px;
-    top: 162px;
-    background-image: url('../img/hammer.png');
+    margin: 20px 35% 0 35%;
+    padding: 10px 5px;
+    background-image: url('../img/icon_hammer.png');
     background-color: #ededed;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.1s ease-in 0.15s;
 }
 
-.el-circle-wrapper:hover .el-circle-icon {
-    background-image: url('../img/hammer_over.png');
-    background-color: #3c3c3b;
+.mod-date:hover .el-circle-icon {
+    background-image: url('../img/icon_hammer_over.png');
+    background-color: transparent;
+    transition: all 0.1s ease-out;
 }
 
 .el-circle-time {
-    position: absolute;
-    bottom: -30px;
-    left: 40px;
-    color: #706f6f;
+    padding-top: 20px;
 }
